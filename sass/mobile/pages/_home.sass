@@ -1,0 +1,302 @@
+// SLIDER //
+.swiper
+  position: relative
+  width: 100%
+  height: 100%
+  z-index: 500
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  .swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+    /* Center slide text vertically */
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .swiper-slide img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  .swiper-pagination-bullet-active
+    background:  $color__orange
+
+  .swiper-pagination-bullet
+      border-radius: 0
+
+  &__title
+    position: absolute
+    bottom: 2rem
+    z-index: 600
+    text-transform: uppercase
+    color: $color__yellow_thin
+    filter: drop-shadow(2px 4px 2px $color__black)
+    font-weight: 600
+    font-size: 3rem
+    text-align: center
+    animation-delay: 1s
+
+// FIN SLIDER //
+
+// PROMO //
+.poster__promo
+  margin: 1rem
+  background-image: url("../img/home/abstract-1.jpg")
+  background-repeat: no-repeat
+  background-position: center center
+  object-fit: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 1rem
+  min-height: 30vh
+
+  &__subtitle
+    text-transform: uppercase
+    color: $color__blue_thin
+    font-weight: 600
+    font-size: 1.3rem
+    text-align: center
+    padding: 0
+    margin: 0
+
+  &__title
+    text-transform: uppercase
+    color: $color__red
+    font-weight: 800
+    font-size: 1.9rem
+    text-align: center
+    padding: 0
+    margin: 0
+
+  &__offer
+    text-transform: uppercase
+    color: $color__blue_thin
+    font-weight: 700
+    font-size: 1.4rem
+    text-align: center
+    letter-spacing: .2rem
+    padding: 0
+    margin: 0
+    margin-bottom: 1rem
+
+  .button
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color__red
+    height: 2.6rem
+    width: 12rem
+    padding: 1rem
+    text-align: center
+    text-transform: uppercase
+    font-size: 1.3rem
+    letter-spacing: .2rem
+    color: white
+    font-weight: 700
+    box-shadow: 2px 4px 6px $color__black
+//FIN PROMO //
+
+// SECCIÓN CATEGORÍAS //
+.cattegories_container
+  width: 100%
+  padding: 0
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 2.3fr 1fr
+
+  .main__cattegory
+    grid-column: 1 / 3
+    grid-row: 1 / 2
+    height: 60vh
+
+    &__header
+      background-color: $color__black
+      padding: .5rem
+
+      &__title
+        margin: 0
+        font:
+          weight: 600
+          size: 1.5rem
+        text:
+          align: center
+          transform: uppercase
+        color: $color__orange
+
+        &--smaller
+          margin:
+            top: -.5rem
+            bottom: .5rem
+          font:
+            weight: 600
+            size: 1rem
+          text:
+            align: center
+            transform: uppercase
+          color: $color__orange
+
+    &__footer
+      text-align: center
+    &__title
+      margin:
+        top: 0
+        bottom: .1rem
+      text:
+        transform: uppercase
+      color: $color__orange
+
+    &__button
+      display: inline-block
+      margin:
+        top: 0
+      text:
+        align: center
+        transform: uppercase
+        decoration: underline
+      font:
+        size: 1.3rem
+        weight: 600
+      color: $color__black
+
+  .secondary__cattegory
+    grid-column: 1 / 2
+    grid-row: 2 / 3
+    &__photo
+      padding: .5rem
+      &__img
+        height: 30vh
+        object-fit: cover
+    &__footer
+      text-align: center
+    &__title
+      margin:
+        top: 0
+        bottom: .1rem
+      text:
+        transform: uppercase
+      font:
+        size: 1.1rem
+      color: $color__orange
+
+    &__button
+      display: inline-block
+      margin:
+        top: 0
+      text:
+        align: center
+        transform: uppercase
+        decoration: underline
+      font:
+        size: 1rem
+        weight: 600
+      color: $color__black
+
+    &--right
+      grid-column: 2 / 3
+      grid-row: 2 / 3
+
+// FIN SECCIÓN CATEGORÍAS //
+
+//SECCIÓN FANS //
+
+.fans__container
+  margin:
+    top: 2rem
+  background: rgb(71,168,189)
+  background: linear-gradient(180deg, rgba(71,168,189,1) 0%, rgba(240,138,22,1) 100%)
+  text-align: center
+  padding: .5rem
+  padding-bottom: 1rem
+
+  &__texts
+  .fans__link
+    font-weight: 600
+  &__title
+    margin: 1rem .5rem
+  &__texts
+    margin: 1rem .5rem
+
+  .swiper
+    width: 100%
+    height: 100%
+
+    .swiper-slide
+      text-align: center
+      font-size: 18px
+      background: transparent
+      height: 36vh
+      /* Center slide text vertically */
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+    .swiper-slide img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      box-shadow: 4px 4px 4px $color__black
+
+    .instauser
+      font-weight: 600
+      padding: .5rem
+
+//FIN SECCIÓN FANS //
+
+// SECCION PAGA METAMASK //
+.metamask__section
+  margin: 3rem 0
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  min-height: 9rem
+  background: rgb(253,236,217)
+  background: linear-gradient(90deg, rgba(253,236,217,1) 0%, rgba(240,138,22,1) 68%, rgba(179,33,58,1) 100%)
+
+  .metamask__img__container
+    position: absolute
+    top: 30%
+    left: 5%
+
+    .metamask__img
+      height: 4rem
+      transform: rotate(-20deg)
+      filter: drop-shadow(2px 4px 6px $color__black)
+
+  .metamask__img__container--right
+    position: absolute
+    top: 30%
+    right: 5%
+
+    .metamask__img--right
+      height: 4rem
+      transform: rotate(20deg)
+      filter: drop-shadow(2px 4px 6px $color__black)
+
+  .button
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color__red
+    height: 5rem
+    width: 14rem
+    padding: 1rem
+    text-align: center
+    text-transform: uppercase
+    font-size: 1.3rem
+    letter-spacing: .2rem
+    color: white
+    font-weight: 700
+    box-shadow: 2px 4px 6px $color__black
+
+// FIN SECCION PAGA METAMASK //

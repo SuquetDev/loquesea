@@ -1,0 +1,192 @@
+// Migas de pan //
+.breadcrumbs
+  width: 100%
+  padding: 1rem
+  &__nav
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: initial
+    align-items: center
+    padding-left: 0
+    margin:
+      top: 0
+    list-style: none
+
+  &__item
+    padding: .2rem
+    &__link
+      font:
+        family: $font__title
+        size: 1.3rem
+        weight: 600
+    &__link::after
+      content: " >"
+      color: $color__orange
+      font-weight: 800
+      margin:
+        left: .2rem
+        right: .2rem
+    &__active
+      color: grey
+      font:
+        family: $font__title
+        size: 1.3rem
+        weight: 600
+
+// Fin Migas de pan //
+// Seccion Fotos //
+.article__header
+  background-color: $color__orange
+  max-width: 90vw
+  padding: .5rem
+  margin:
+    top: 0
+    bottom: .5rem
+
+  &__title
+    margin: 0
+    padding: 0
+    color: white
+    text:
+      transform: uppercase
+    letter-spacing: .1rem
+.photos__container
+  padding: 1rem
+// Swiper //
+.swiper
+  width: 100%
+  height: 100%
+
+  .swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+    /* Center slide text vertically */
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .swiper-slide img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+    margin-bottom: .5rem
+
+
+  body
+    background: #000
+    color: #000
+
+  .swiper
+    width: 100%
+    height: 300px
+    margin-left: auto
+    margin-right: auto
+
+  .swiper-slide
+    background-size: cover
+    background-position: center
+
+  .mySwiper2
+    height: 80%
+    width: 100%
+
+  .mySwiper
+    height: 20%
+    box-sizing: border-box
+    padding: 10px 0
+
+  .mySwiper .swiper-slide
+    width: 25%
+    height: 100%
+    opacity: 0.4
+
+  .mySwiper .swiper-slide-thumb-active
+    opacity: 1
+
+  .swiper-slide img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+    filter: drop-shadow(2px 4px 2px $color__black)
+
+  .swiper-button-next, .swiper-button-prev
+    color: $color__red
+
+
+// Fin swiper //
+
+// Zona compra //
+.article__selection
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.article__price__container
+  width: 100%
+  text-align: left
+.article__price
+  margin-left: 1.5rem
+  font:
+    family: $font__title
+    size: 2rem
+    weight: 600
+  color: $color__black
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color__red
+  height: 3rem
+  width: 20rem
+  padding: 1rem
+  text-align: center
+  text-transform: uppercase
+  font-size: 1.3rem
+  letter-spacing: .2rem
+  color: white
+  font-weight: 700
+  box-shadow: 2px 4px 6px $color__black
+// Fin Zona compra //
+
+// Descripcion //
+.description
+
+.article__header--description
+  margin:
+    top: 2rem
+    bottom: 0
+  max-width: 60vw
+  .article__header__title--description
+    font-size: 1.5rem
+
+.description__texts
+  padding: 1rem
+  text-align: justify
+  background-color: #FDECD970
+
+  .description__text
+    margin-bottom: 1rem
+  .description__list
+    padding-left: 1rem
+    &__item
+
+.table__container
+  background-color: #FDECD970
+  padding: 1rem
+  table
+    text-align: center
+    th
+      background-color: #8080801A
+    td
+      background-color: #fff
+// Fin descripción //
+
+.related
+  display: grid
+  padding: .5rem
+  grid-template-columns: 1fr 1fr
+  gap: .5rem

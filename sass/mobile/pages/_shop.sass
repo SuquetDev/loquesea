@@ -1,0 +1,131 @@
+
+
+// DESTACADO //
+.featured__container
+  background-image: url("../img/shop/destacado.png")
+  background-repeat: no-repeat
+  background-position: 20% 35%
+  background-size: cover
+  height: 60vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: end
+  padding-bottom: 1rem
+  margin-bottom: 1rem
+
+  .featured__title
+    margin: 0
+    font:
+      weight: 600
+      size: 2rem
+    text:
+      align: center
+      transform: uppercase
+    letter-spacing: .2rem
+    color: $color__yellow_thin
+    filter: drop-shadow(2px 4px 6px $color__black)
+  .featured__price
+    margin-top: -1.2rem
+    font:
+      weight: 500
+      size: 2rem
+    text:
+      align: center
+      transform: uppercase
+    letter-spacing: .2rem
+    color: $color__yellow_thin
+    filter: drop-shadow(2px 4px 6px $color__black)
+  .button
+    width: 12rem
+// FIN DESTACADO//
+
+// CATEGORÍAS //
+.cattegories
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  .cattegory
+    margin-bottom: 1.5rem
+    //background-color:
+    &__header
+      background-color: $color__orange
+      max-width: 90vw
+      padding: .5rem
+      margin:
+        top: 1rem
+        bottom: .5rem
+
+      &__title
+        margin: 0
+        padding: 0
+        color: white
+        text:
+          transform: uppercase
+    &__main
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 30vh
+      gap: .5rem
+
+
+    &__photo
+      grid-column: 1 / 3
+      grid-row: 1 / 2
+      height: 30vh
+      background:
+        image: url("../img/shop/correas-photo.jpg")
+        repeat: no-repeat
+        position: center center
+        size: cover
+
+    .cattegory__article
+      padding: .2rem
+      text-align: center
+      box-shadow: 2px 4px 6px $color__black
+      .article__img
+      .article__title
+        margin:
+          top: 0
+          bottom: .1rem
+        text:
+          transform: uppercase
+        color: $color__orange
+        font:
+          size: 1.3rem
+
+      .article__button
+        display: inline-block
+        margin:
+         top: 0
+        text:
+          align: center
+          transform: uppercase
+          decoration: underline
+        font:
+         size: 1.3rem
+          weight: 600
+        color: $color__black
+
+  #cattegory-camas
+    .cattegory__photo
+      background-image: url("../img/shop/camas-photo.jpg")
+    .article__title
+      font-size: 1.2rem
+  #cattegory-alfombrillas
+    .cattegory__photo
+      background-image: url("../img/shop/alfombrillas-photo.jpg")
+  #cattegory-chapas
+    .cattegory__photo
+      background-image: url("../img/shop/chapas-photo.jpg")
+  #cattegory-collares
+    .cattegory__photo
+      background-image: url("../img/shop/collar-photo.jpg")
+  #cattegory-comederos
+    .cattegory__photo
+      background-image: url("../img/shop/comedero-photo.jpg")
+
+// FIN CATEGORÍAS //

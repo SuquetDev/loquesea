@@ -1,0 +1,18 @@
+.footer .nav__footer .footer__list {
+  list-style: none;
+}
+.footer .nav__footer .footer__list .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+.footer .nav__footer .footer__list .list__itemtitle {
+  text-transform: uppercase;
+}
